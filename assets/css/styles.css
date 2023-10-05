@@ -40,7 +40,9 @@ a {
 .navbar {
     display: flex;
     align-items: center;
-    padding-top: 38px;
+    /* padding-top: 38px; */
+    /* background-color: peru; */
+    padding: 12px 0;
 }
 .line-clamp {
     display: -webkit-box;
@@ -49,7 +51,15 @@ a {
     overflow: hidden;
 }
 /* =================Header ================*/
-.header {
+.fixed-header {
+    background-color: #e6f0ff;
+    padding-top: 26px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    top: -26px;
+}
+.hero-wrap {
     background-color: #e6f0ff;
     height: 100vh;
     position: relative;
@@ -86,7 +96,7 @@ a {
 }
 
 .hero {
-    margin-top: 130px;
+    padding-top: 130px;
 }
 .hero .info {
     width: 51%;
